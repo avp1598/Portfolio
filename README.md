@@ -3,6 +3,7 @@
     
 My personal website, built with [Next.js (13)](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=avp1598.dev), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
 
+Inspired from: [Chronark](https://github.com/chronark/chronark.com)
 </div>
 
 <br/>
