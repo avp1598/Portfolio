@@ -22,9 +22,6 @@ export const Project = defineDocumentType(() => ({
   contentType: "mdx",
 
   fields: {
-    published: {
-      type: "boolean",
-    },
     title: {
       type: "string",
       required: true,
@@ -39,8 +36,9 @@ export const Project = defineDocumentType(() => ({
     url: {
       type: "string",
     },
-    repository: {
-      type: "string",
+    tags: {
+      type: "list",
+      of: { type: "string" },
     },
   },
   computedFields,

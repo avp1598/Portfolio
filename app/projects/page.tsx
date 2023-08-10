@@ -45,7 +45,8 @@ export default async function ProjectsPage() {
             Projects
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of the projects are from work and some are on my own time.
+            My projects and experiments. Fullstack web apps, CLI tools, and
+            more.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
@@ -83,11 +84,18 @@ export default async function ProjectsPage() {
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   {featured.description}
                 </p>
-                <div className="absolute bottom-4 md:bottom-8">
-                  <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
-                    Read more <span aria-hidden="true">&rarr;</span>
-                  </p>
-                </div>
+                {featured.tags && (
+                  <div className="flex flex-wrap mt-4">
+                    {featured.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-2 py-1 mr-2 mb-2 text-xs font-medium tracking-wide text-zinc-100 bg-zinc-800 rounded-md"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </article>
             </a>
           </Card>

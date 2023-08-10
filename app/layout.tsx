@@ -9,11 +9,10 @@ export const metadata: Metadata = {
     default: "avp1598.dev",
     template: "%s | avp1598.dev",
   },
-  description: "Software engineer at upstash.com and founder of planetfall.io",
+  description: "Hi, I am Aditya Veer, creative developer from India",
   openGraph: {
     title: "avp1598.dev",
-    description:
-      "Software engineer at upstash.com and founder of planetfall.io",
+    description: "Hi, I am Aditya Veer, creative developer from India",
     url: "https://avp1598.dev",
     siteName: "avp1598.dev",
     images: [
